@@ -1,0 +1,30 @@
+﻿<Page x:Class="ProyectoUno.Formulario"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProyectoUno"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Formulario">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="0" Grid.Row="0">Nombre</TextBlock>
+        <TextBox x:Name="tbNombre"  Grid.Column="1" Grid.Row="0"></TextBox>
+
+        <TextBlock Grid.Column="0" Grid.Row="1">Edad</TextBlock>
+        <TextBox x:Name="tbEdad" Grid.Column="1" Grid.Row="1"></TextBox>
+
+        <Button Grid.Column="1" Grid.Row="2" Click="Button_Click">Guardar</Button>
+    </Grid>
+</Page>
